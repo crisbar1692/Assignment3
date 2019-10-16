@@ -11,7 +11,7 @@ process printSMILES {
 
 
     input:
-    val wikidata, smiles from molecules_ch
+    val smile from molecules_ch
 
     output:
     stdout out
@@ -27,16 +27,17 @@ process printSMILES {
 	def cdk = new CDKManager(".");
 
 	try {
+	
 	mol = cdk.fromSMILES("$smile")
+	
+
 	ac = mol.getAtomContainer()
 	descriptor=new JPLogPDescriptor()
 	logP=descriptor.calculate(ac).value
 	  println "Log P:" + logP
 	
 
-	}catch (Exception exc) {
-    println "Error in " 
-     } 
+	} 
       """
 }
 

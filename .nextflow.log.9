@@ -1,0 +1,50 @@
+Oct-16 15:23:37.796 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello
+Oct-16 15:23:38.044 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-16 15:23:38.245 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /home/crisbar16/.nextflow/assets
+Oct-16 15:23:38.957 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/crisbar16/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-16 15:23:39.076 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/crisbar16/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-16 15:23:39.275 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/crisbar16/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-16 15:23:39.275 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow-io/hello` [suspicious_pasteur] - revision: a9012339ce [master]
+Oct-16 15:23:40.335 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/crisbar16/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-16 15:23:40.336 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/crisbar16/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-16 15:23:40.353 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-16 15:23:40.497 [main] DEBUG nextflow.Session - Session uuid: 84057b03-258e-4ce7-bd23-71efbac435bf
+Oct-16 15:23:40.497 [main] DEBUG nextflow.Session - Run name: suspicious_pasteur
+Oct-16 15:23:40.499 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-16 15:23:40.595 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.07.0 build 5106
+  Created: 27-07-2019 13:22 UTC (15:22 CEST)
+  System: Linux 4.4.0-18362-Microsoft
+  Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
+  Encoding: UTF-8 (UTF-8)
+  Process: 2267@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.2 GB) - Swap: 24 GB (24 GB)
+Oct-16 15:23:40.662 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-16 15:23:40.662 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/.nextflow/assets/nextflow-io/hello/bin
+Oct-16 15:23:41.140 [main] DEBUG nextflow.Session - Session start invoked
+Oct-16 15:23:41.545 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-16 15:23:41.562 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Oct-16 15:23:41.735 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-16 15:23:41.735 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-16 15:23:41.745 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-16 15:23:41.753 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-16 15:23:41.946 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > sayHello -- maxForks: 4
+Oct-16 15:23:42.070 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-16 15:23:42.070 [main] DEBUG nextflow.Session - Session await
+Oct-16 15:23:42.585 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-16 15:23:42.604 [Task submitter] INFO  nextflow.Session - [43/609deb] Submitted process > sayHello (4)
+Oct-16 15:23:42.687 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-16 15:23:42.690 [Task submitter] INFO  nextflow.Session - [88/c32a81] Submitted process > sayHello (3)
+Oct-16 15:23:42.705 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-16 15:23:42.711 [Task submitter] INFO  nextflow.Session - [64/42d7ac] Submitted process > sayHello (2)
+Oct-16 15:23:42.729 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-16 15:23:42.731 [Task submitter] INFO  nextflow.Session - [7e/239deb] Submitted process > sayHello (1)
+Oct-16 15:23:43.115 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sayHello (4); status: COMPLETED; exit: 0; error: -; workDir: /home/crisbar16/Assignment3/work/43/609deb821a0a6c93e9489613cbc938]
+Oct-16 15:23:43.255 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /home/crisbar16/Assignment3/work/88/c32a81326c8f09871e961d9781a5c7]
+Oct-16 15:23:43.268 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /home/crisbar16/Assignment3/work/64/42d7acc54dd6df12a23b8b705fc65a]
+Oct-16 15:23:43.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /home/crisbar16/Assignment3/work/7e/239deb6ea9072b6eff5968dc82ef29]
+Oct-16 15:23:43.362 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-16 15:23:43.469 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-16 15:23:43.492 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=4; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=1.9s; failedDuration=0ms; cachedDuration=0ms]
+Oct-16 15:23:43.592 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-16 15:23:43.626 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

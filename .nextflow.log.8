@@ -1,0 +1,64 @@
+Oct-16 15:23:55.468 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
+Oct-16 15:23:55.725 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-16 15:23:55.744 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [admiring_mirzakhani] - revision: 57ba0b766c
+Oct-16 15:23:55.921 [main] DEBUG nextflow.Session - Session uuid: f177ba52-c596-4e54-9e1a-487a9dfb9a23
+Oct-16 15:23:55.921 [main] DEBUG nextflow.Session - Run name: admiring_mirzakhani
+Oct-16 15:23:55.926 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-16 15:23:56.011 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.07.0 build 5106
+  Created: 27-07-2019 13:22 UTC (15:22 CEST)
+  System: Linux 4.4.0-18362-Microsoft
+  Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
+  Encoding: UTF-8 (UTF-8)
+  Process: 2419@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.3 GB) - Swap: 24 GB (24 GB)
+Oct-16 15:23:56.094 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-16 15:23:56.095 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
+Oct-16 15:23:56.449 [main] DEBUG nextflow.Session - Session start invoked
+Oct-16 15:23:57.272 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-16 15:23:57.642 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-16 15:23:57.642 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-16 15:23:57.652 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-16 15:23:57.658 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-16 15:23:57.756 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
+Oct-16 15:23:57.813 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-16 15:23:57.814 [main] DEBUG nextflow.Session - Session await
+Oct-16 15:23:58.054 [Actor Thread 7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'printSMILES (4)'
+
+Caused by:
+  Unknown variable 'logP' -- Make sure it is not misspelt and defined somewhere in the script before using it
+
+Source block:
+        """
+  #!/usr/bin/env groovy
+  
+  	@Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.9')
+  	@Grab(group='org.openscience.cdk', module='cdk-qsarmolecular', version='2.3')
+  	import net.bioclipse.managers.CDKManager
+  
+  	def cdk = new CDKManager(".");
+  
+  	try {
+  	mol = cdk.fromSMILES("$smile")
+  	ac = mol.getAtomContainer()
+  	logP=new JPLogPDescriptor()
+  	logP.calculate(ac)
+  	  println "No problem while parsing this SMILE: $logP"
+  	} catch (Exception exc) {
+  	  println "Error in parsing this SMILE $smile"
+  	}
+        """
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Oct-16 15:23:58.119 [Actor Thread 7] DEBUG nextflow.Session - Session aborted -- Cause: Process `null` script contains error(s)
+Oct-16 15:23:58.169 [Actor Thread 7] DEBUG nextflow.Session - The following nodes are still active:
+[process] printSMILES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: smile
+  port 1: (cntrl) -     ; channel: $
+
+Oct-16 15:23:58.174 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-16 15:23:58.175 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-16 15:23:58.184 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=0; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms]
+Oct-16 15:23:58.388 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-16 15:23:58.441 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,12 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/usr/share/groovy/lib/groovy-2.4.16.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/crisbar16/Assignment3/work/c2/c87f0c98db8ad11d2b5fc61f22680e/.command.sh: 8: A try statement must have at least one catch or finally block. at line: 8 column: 2. File: /home/crisbar16/Assignment3/work/c2/c87f0c98db8ad11d2b5fc61f22680e/.command.sh @ line 8, column 2.
+   	try {
+    ^
+
+1 error
+
