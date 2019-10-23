@@ -1,100 +1,31 @@
-Oct-16 15:40:31.002 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
-Oct-16 15:40:31.299 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
-Oct-16 15:40:31.324 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [cheesy_allen] - revision: 4b90bdcaff
-Oct-16 15:40:31.510 [main] DEBUG nextflow.Session - Session uuid: 6f6a4629-b9be-49d8-9d86-112bf115ed0d
-Oct-16 15:40:31.511 [main] DEBUG nextflow.Session - Run name: cheesy_allen
-Oct-16 15:40:31.514 [main] DEBUG nextflow.Session - Executor pool size: 4
-Oct-16 15:40:31.590 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-23 14:18:40.146 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
+Oct-23 14:18:40.425 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-23 14:18:40.448 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [compassionate_carson] - revision: 1506b4e8a3
+Oct-23 14:18:40.636 [main] DEBUG nextflow.Session - Session uuid: c0a183e5-23c0-40f1-808c-f742933e5238
+Oct-23 14:18:40.637 [main] DEBUG nextflow.Session - Run name: compassionate_carson
+Oct-23 14:18:40.642 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-23 14:18:40.732 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 19.07.0 build 5106
   Created: 27-07-2019 13:22 UTC (15:22 CEST)
   System: Linux 4.4.0-18362-Microsoft
   Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
   Encoding: UTF-8 (UTF-8)
-  Process: 3447@DESKTOP-I8SAP9J [127.0.1.1]
-  CPUs: 4 - Mem: 7.9 GB (3.3 GB) - Swap: 24 GB (24 GB)
-Oct-16 15:40:31.655 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
-Oct-16 15:40:31.656 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
-Oct-16 15:40:32.048 [main] DEBUG nextflow.Session - Session start invoked
-Oct-16 15:40:32.765 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-16 15:40:33.073 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Oct-16 15:40:33.074 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Oct-16 15:40:33.080 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Oct-16 15:40:33.086 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
-Oct-16 15:40:33.174 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
-Oct-16 15:40:33.223 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Oct-16 15:40:33.223 [main] DEBUG nextflow.Session - Session await
-Oct-16 15:40:33.740 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:40:33.754 [Task submitter] INFO  nextflow.Session - [d7/862da8] Submitted process > printSMILES (1)
-Oct-16 15:40:33.795 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:40:33.797 [Task submitter] INFO  nextflow.Session - [02/85a641] Submitted process > printSMILES (4)
-Oct-16 15:40:33.811 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:40:33.813 [Task submitter] INFO  nextflow.Session - [ef/7e0e63] Submitted process > printSMILES (3)
-Oct-16 15:40:33.826 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:40:33.830 [Task submitter] INFO  nextflow.Session - [fc/f98fa5] Submitted process > printSMILES (2)
-Oct-16 15:40:37.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printSMILES (1); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/d7/862da82fcbc019b72a50480bfea8bc]
-Oct-16 15:40:37.132 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:40:37.133 [Task submitter] INFO  nextflow.Session - [9c/7a9c84] Submitted process > printSMILES (5)
-Oct-16 15:40:37.178 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'printSMILES (1)'
+  Process: 554@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.5 GB) - Swap: 24 GB (23.9 GB)
+Oct-23 14:18:40.804 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-23 14:18:40.804 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
+Oct-23 14:18:41.174 [main] DEBUG nextflow.Session - Session start invoked
+Oct-23 14:18:43.489 [main] DEBUG nextflow.Session - Session aborted -- Cause: startup failed:
+Script_4f8f864d: 16: Invalid process definition -- Make sure the process ends with a script wrapped by quote characters @ line 16, column 1.
+   process printSMILES {
+   ^
 
-Caused by:
-  Process `printSMILES (1)` terminated with an error exit status (1)
+1 error
 
-Command executed:
+Oct-23 14:18:43.678 [main] ERROR nextflow.cli.Launcher - startup failed:
+Script_4f8f864d: 16: Invalid process definition -- Make sure the process ends with a script wrapped by quote characters @ line 16, column 1.
+   process printSMILES {
+   ^
 
-  #!/usr/bin/env groovy
-  	@Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.9')
-  	@Grab(group='org.openscience.cdk', module='cdk-qsarmolecular', version='2.3')
-  	import net.bioclipse.managers.CDKManager
-  	import org.openscience.cdk.interfaces.IAtomContainer;
-  	import org.openscience.cdk.qsar.descriptors.molecular.JPlogPDescriptor;
-  	def cdk = new CDKManager(".");
-  
-  	try {
-  	mol = cdk.fromSMILES("[<http://www.wikidata.org/entity/Q27145494>, CC1=C(C=CC(=C1)Cl)OC(C)C(=O)O]")
-  	ac = mol.getAtomContainer()
-  	descriptor=new JPLogPDescriptor()
-  	logP=descriptor.calculate(ac)
-  	  println "Log P:" + logP
-  	
-  
-  	}
+1 error
 
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  WARNING: An illegal reflective access operation has occurred
-  WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/usr/share/groovy/lib/groovy-2.4.16.jar) to method java.lang.Object.finalize()
-  WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
-  WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-  WARNING: All illegal access operations will be denied in a future release
-  org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-  .command.sh: 9: A try statement must have at least one catch or finally block. at line: 9 column: 2. File: .command.sh @ line 9, column 2.
-     	try {
-      ^
-  
-  1 error
-
-Work dir:
-  /home/crisbar16/Assignment3/work/d7/862da82fcbc019b72a50480bfea8bc
-
-Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
-Oct-16 15:40:37.529 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `printSMILES (1)` terminated with an error exit status (1)
-Oct-16 15:40:37.575 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] println
-
-Oct-16 15:40:37.582 [main] DEBUG nextflow.Session - Session await > all process finished
-Oct-16 15:40:37.582 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Oct-16 15:40:37.596 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (4)
-Oct-16 15:40:37.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: printSMILES (4); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/02/85a641d6dee665c8d90340736a5148]
-Oct-16 15:40:37.624 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printSMILES (3); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/ef/7e0e63b8b5d742bdff1e37f29b0a0c]
-Oct-16 15:40:37.644 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printSMILES (2); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/fc/f98fa5093f10bed612ba21f402c853]
-Oct-16 15:40:37.663 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill printSMILES (3) -- command: kill -TERM 3537; exit: 1 
- bash: line 0: kill: (3537) - No such process
-
-Oct-16 15:40:37.732 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=0; failedCount=6; ignoredCount=0; cachedCount=0; succeedDuration=0ms; failedDuration=18.2s; cachedDuration=0ms]
-Oct-16 15:40:38.053 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Oct-16 15:40:38.102 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

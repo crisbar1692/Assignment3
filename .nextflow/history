@@ -35,3 +35,10 @@
 2019-10-16 15:46:42	-	fabulous_ampere	-	a1ed2c69f6f1e2fd33e86b304879ca1f	c1630c03-e02b-40bc-ba9d-6242a78e9864	nextflow run simple2.nf
 2019-10-23 13:35:55	-	nasty_yonath	-	a1ed2c69f6f1e2fd33e86b304879ca1f	ebe63059-684b-4f63-9c03-079aebdcd160	nextflow run simple2.nf
 2019-10-23 13:50:15	-	awesome_albattani	-	a1ed2c69f6f1e2fd33e86b304879ca1f	efc80670-ed6b-4488-a246-75fc9b24f7b4	nextflow run simple2.nf
+2019-10-23 14:18:40	-	compassionate_carson	-	1506b4e8a3ce8cd0018c1a3db0ce8e8d	c0a183e5-23c0-40f1-808c-f742933e5238	nextflow run simple2.nf
+2019-10-23 14:19:26	-	berserk_swirles	-	8d39cfebb93128e732e21ae8e7873986	690dc807-6717-4942-af90-3e0756cb047f	nextflow run simple2.nf
+2019-10-23 14:20:34	-	romantic_kalam	-	e8347c5b1f9b35b320b79dd77cd014cc	00065e95-7b7d-4e8d-8f3d-e57dbde3ad5e	nextflow run simple2.nf
+2019-10-23 14:20:57	-	small_lavoisier	-	f061c7253c52cf6702c10d569f75834a	51487ff9-9c0d-4cc3-b0a7-cfb83cd98c31	nextflow run simple2.nf
+2019-10-23 14:22:00	-	voluminous_laplace	-	28c5845c7f0b5a1c8f615fa73e4393d9	1cd59d45-8d8b-468b-b632-c635999f3d23	nextflow run simple2.nf
+2019-10-23 14:22:40	6.8s	insane_stonebraker	OK	6674d6ea6c28a9b537df8f6f1dabeabe	2e7e2954-8327-4ce3-95ef-4d16c6c9f9e3	nextflow run simple2.nf
+2019-10-23 14:23:15	6.2s	magical_northcutt	OK	6674d6ea6c28a9b537df8f6f1dabeabe	94cbed9a-0268-4d53-92f3-99890000b4c3	nextflow run simple2.nf

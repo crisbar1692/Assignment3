@@ -17,21 +17,21 @@ process printSMILES {
 
 
     input:
-    val wikidata, smiles from molecules_ch
+    set wikidata, smiles from molecules_ch
+exec:
 
     def cdk = new CDKManager(".");
 	try {
-	mol = cdk.fromSMILES("$smile")
-	ac = mol.getAtomContainer()
-	descriptor=new JPLogPDescriptor()
-	logP=descriptor.calculate(ac).value
+	mol = cdk.fromSMILES(smiles)
+	descriptor=new JPlogPDescriptor()
+	logP=descriptor.calculate(mol.getAtomContainer()).value.toString()
 	  println "Log P:" + logP
 	
 
 	}catch (Exception exc) {
     println "Error in " 
      } 
-      """
+     
 }
 
-out.println{ it }
+
