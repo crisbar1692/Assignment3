@@ -1,23 +1,23 @@
-Oct-16 15:46:41.515 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
-Oct-16 15:46:41.824 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
-Oct-16 15:46:41.846 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [fabulous_ampere] - revision: a1ed2c69f6
-Oct-16 15:46:42.040 [main] DEBUG nextflow.Session - Session uuid: c1630c03-e02b-40bc-ba9d-6242a78e9864
-Oct-16 15:46:42.041 [main] DEBUG nextflow.Session - Run name: fabulous_ampere
-Oct-16 15:46:42.045 [main] DEBUG nextflow.Session - Executor pool size: 4
-Oct-16 15:46:42.128 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-23 13:50:14.831 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
+Oct-23 13:50:15.108 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-23 13:50:15.131 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [awesome_albattani] - revision: a1ed2c69f6
+Oct-23 13:50:15.304 [main] DEBUG nextflow.Session - Session uuid: efc80670-ed6b-4488-a246-75fc9b24f7b4
+Oct-23 13:50:15.305 [main] DEBUG nextflow.Session - Run name: awesome_albattani
+Oct-23 13:50:15.311 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-23 13:50:15.403 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 19.07.0 build 5106
   Created: 27-07-2019 13:22 UTC (15:22 CEST)
   System: Linux 4.4.0-18362-Microsoft
   Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
   Encoding: UTF-8 (UTF-8)
-  Process: 4610@DESKTOP-I8SAP9J [127.0.1.1]
-  CPUs: 4 - Mem: 7.9 GB (3.3 GB) - Swap: 24 GB (24 GB)
-Oct-16 15:46:42.193 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
-Oct-16 15:46:42.194 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
-Oct-16 15:46:42.643 [main] DEBUG nextflow.Session - Session start invoked
-Oct-16 15:46:43.449 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-16 15:46:43.730 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown process directive: `_in_val`
-Oct-16 15:46:43.946 [main] ERROR nextflow.cli.Launcher - @unknown
+  Process: 95@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.1 GB) - Swap: 24 GB (24 GB)
+Oct-23 13:50:15.476 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-23 13:50:15.477 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
+Oct-23 13:50:16.031 [main] DEBUG nextflow.Session - Session start invoked
+Oct-23 13:50:16.788 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-23 13:50:17.077 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown process directive: `_in_val`
+Oct-23 13:50:17.389 [main] ERROR nextflow.cli.Launcher - @unknown
 nextflow.exception.IllegalDirectiveException: Unknown process directive: `_in_val`
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)

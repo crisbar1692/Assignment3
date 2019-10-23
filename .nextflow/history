@@ -33,3 +33,5 @@
 2019-10-16 15:43:01	23.4s	crazy_panini	ERR	2d6c926ea1c7f7730661b4350ad20e4b	17c6ca67-a559-4bf6-b419-f99d372d1455	nextflow run simple2.nf
 2019-10-16 15:45:26	-	elated_goldstine	-	a1ed2c69f6f1e2fd33e86b304879ca1f	3c6fbd2f-f3d1-4862-a1e9-c902d7b2244c	nextflow run simple2.nf
 2019-10-16 15:46:42	-	fabulous_ampere	-	a1ed2c69f6f1e2fd33e86b304879ca1f	c1630c03-e02b-40bc-ba9d-6242a78e9864	nextflow run simple2.nf
+2019-10-23 13:35:55	-	nasty_yonath	-	a1ed2c69f6f1e2fd33e86b304879ca1f	ebe63059-684b-4f63-9c03-079aebdcd160	nextflow run simple2.nf
+2019-10-23 13:50:15	-	awesome_albattani	-	a1ed2c69f6f1e2fd33e86b304879ca1f	efc80670-ed6b-4488-a246-75fc9b24f7b4	nextflow run simple2.nf

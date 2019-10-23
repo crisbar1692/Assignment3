@@ -1,140 +1,89 @@
-Oct-16 15:43:00.900 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
-Oct-16 15:43:01.181 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
-Oct-16 15:43:01.205 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [crazy_panini] - revision: 2d6c926ea1
-Oct-16 15:43:01.394 [main] DEBUG nextflow.Session - Session uuid: 17c6ca67-a559-4bf6-b419-f99d372d1455
-Oct-16 15:43:01.394 [main] DEBUG nextflow.Session - Run name: crazy_panini
-Oct-16 15:43:01.399 [main] DEBUG nextflow.Session - Executor pool size: 4
-Oct-16 15:43:01.485 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-16 15:46:41.515 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
+Oct-16 15:46:41.824 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-16 15:46:41.846 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [fabulous_ampere] - revision: a1ed2c69f6
+Oct-16 15:46:42.040 [main] DEBUG nextflow.Session - Session uuid: c1630c03-e02b-40bc-ba9d-6242a78e9864
+Oct-16 15:46:42.041 [main] DEBUG nextflow.Session - Run name: fabulous_ampere
+Oct-16 15:46:42.045 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-16 15:46:42.128 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 19.07.0 build 5106
   Created: 27-07-2019 13:22 UTC (15:22 CEST)
   System: Linux 4.4.0-18362-Microsoft
   Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
   Encoding: UTF-8 (UTF-8)
-  Process: 4149@DESKTOP-I8SAP9J [127.0.1.1]
-  CPUs: 4 - Mem: 7.9 GB (3.2 GB) - Swap: 24 GB (24 GB)
-Oct-16 15:43:01.555 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
-Oct-16 15:43:01.555 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
-Oct-16 15:43:02.037 [main] DEBUG nextflow.Session - Session start invoked
-Oct-16 15:43:02.751 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-16 15:43:03.058 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Oct-16 15:43:03.059 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Oct-16 15:43:03.066 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Oct-16 15:43:03.073 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
-Oct-16 15:43:03.158 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
-Oct-16 15:43:03.219 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Oct-16 15:43:03.220 [main] DEBUG nextflow.Session - Session await
-Oct-16 15:43:03.661 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:43:03.676 [Task submitter] INFO  nextflow.Session - [9e/9fcd29] Submitted process > printSMILES (4)
-Oct-16 15:43:03.725 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:43:03.727 [Task submitter] INFO  nextflow.Session - [38/551a9b] Submitted process > printSMILES (1)
-Oct-16 15:43:03.740 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:43:03.744 [Task submitter] INFO  nextflow.Session - [e4/687bea] Submitted process > printSMILES (2)
-Oct-16 15:43:03.796 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:43:03.802 [Task submitter] INFO  nextflow.Session - [1c/420add] Submitted process > printSMILES (5)
-Oct-16 15:43:22.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printSMILES (4); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/9e/9fcd2999992bdc74c45ba0d1bd13de]
-Oct-16 15:43:22.795 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-16 15:43:22.795 [Task submitter] INFO  nextflow.Session - [07/3dc442] Submitted process > printSMILES (3)
-Oct-16 15:43:23.004 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'printSMILES (4)'
-
-Caused by:
-  Process `printSMILES (4)` terminated with an error exit status (1)
-
-Command executed:
-
-  #!/usr/bin/env groovy
-  	@Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.9')
-  	@Grab(group='org.openscience.cdk', module='cdk-qsarmolecular', version='2.3')
-  	import net.bioclipse.managers.CDKManager
-  	import org.openscience.cdk.interfaces.IAtomContainer;
-  	import org.openscience.cdk.qsar.descriptors.molecular.JPlogPDescriptor;
-  	def cdk = new CDKManager(".");
-  
-  	try {
-  	mol = cdk.fromSMILES("[<http://www.wikidata.org/entity/Q27216081>, CC1CCCC(=O)CCCC=CC2=CC(=CC(=C2C(=O)O1)O)O]")
-  	ac = mol.getAtomContainer()
-  	descriptor=new JPLogPDescriptor()
-  	logP=descriptor.calculate(ac).value
-  	  println "Log P:" + logP
-  	
-  
-  	}catch (Exception exc) {
-      println "Error in " 
-       }
-
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-  	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
-  	at groovy.grape.GrapeIvy.getDependencies(GrapeIvy.groovy:422)
-  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:169)
-  	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-  	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-  	at groovy.grape.GrapeIvy.resolve(GrapeIvy.groovy:569)
-  	at groovy.grape.GrapeIvy$resolve$1.callCurrent(Unknown Source)
-  	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:193)
-  	at groovy.grape.GrapeIvy.resolve(GrapeIvy.groovy:536)
-  	at groovy.grape.GrapeIvy$resolve$0.callCurrent(Unknown Source)
-  	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
-  	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-  	at groovy.grape.GrapeIvy.grab(GrapeIvy.groovy:254)
-  	at groovy.grape.Grape.grab(Grape.java:167)
-  	at groovy.grape.GrabAnnotationTransformation.visit(GrabAnnotationTransformation.java:376)
-  	at org.codehaus.groovy.transform.ASTTransformationVisitor$3.call(ASTTransformationVisitor.java:346)
-  	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:966)
-  	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:626)
-  	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:602)
-  	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:579)
-  	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:323)
-  	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:293)
-  	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:677)
-  	at groovy.lang.GroovyShell.run(GroovyShell.java:506)
-  	at groovy.lang.GroovyShell.run(GroovyShell.java:496)
-  	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:597)
-  	at groovy.ui.GroovyMain.run(GroovyMain.java:329)
-  	at groovy.ui.GroovyMain.process(GroovyMain.java:315)
-  	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:134)
-  	at groovy.ui.GroovyMain.main(GroovyMain.java:114)
-  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-  	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:116)
-  	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:138)
-  
-  1 error
-
-Work dir:
-  /home/crisbar16/Assignment3/work/9e/9fcd2999992bdc74c45ba0d1bd13de
-
-Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
-Oct-16 15:43:23.951 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `printSMILES (4)` terminated with an error exit status (1)
-Oct-16 15:43:23.993 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] println
-
-Oct-16 15:43:24.006 [main] DEBUG nextflow.Session - Session await > all process finished
-Oct-16 15:43:24.007 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Oct-16 15:43:24.031 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (4)
-Oct-16 15:43:24.043 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printSMILES (1); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/38/551a9b2f259911f5f8a84fdee32d27]
-Oct-16 15:43:24.059 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printSMILES (2); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/e4/687beaca3c5579d6e6801ab4b32057]
-Oct-16 15:43:24.072 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: printSMILES (5); status: COMPLETED; exit: 1; error: -; workDir: /home/crisbar16/Assignment3/work/1c/420addf78b791c6768fc89aecb2b6f]
-Oct-16 15:43:24.105 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill printSMILES (1) -- command: kill -TERM 4239; exit: 1 
- bash: line 0: kill: (4239) - No such process
-
-Oct-16 15:43:24.154 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=0; failedCount=6; ignoredCount=0; cachedCount=0; succeedDuration=0ms; failedDuration=1m 40s; cachedDuration=0ms]
-Oct-16 15:43:24.387 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Oct-16 15:43:24.454 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 4610@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.3 GB) - Swap: 24 GB (24 GB)
+Oct-16 15:46:42.193 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-16 15:46:42.194 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
+Oct-16 15:46:42.643 [main] DEBUG nextflow.Session - Session start invoked
+Oct-16 15:46:43.449 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-16 15:46:43.730 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown process directive: `_in_val`
+Oct-16 15:46:43.946 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.IllegalDirectiveException: Unknown process directive: `_in_val`
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at nextflow.script.ProcessConfig.checkName(ProcessConfig.groovy:209)
+	at nextflow.script.ProcessConfig.methodMissing(ProcessConfig.groovy:228)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaClassImpl.invokeMissingMethod(MetaClassImpl.java:958)
+	at groovy.lang.MetaClassImpl.invokePropertyOrMissing(MetaClassImpl.java:1286)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1219)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaObjectProtocol$invokeMethod.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:143)
+	at nextflow.script.ProcessConfig.invokeMethod(ProcessConfig.groovy:224)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:397)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:339)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:64)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at Script_5c22cf09$_runScript_closure3.doCall(Script_5c22cf09:14)
+	at Script_5c22cf09$_runScript_closure3.doCall(Script_5c22cf09)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:399)
+	at nextflow.script.ProcessFactory.createProcessor(ProcessFactory.groovy:109)
+	at nextflow.script.ProcessFactory.createProcessor(ProcessFactory.groovy)
+	at nextflow.script.ProcessFactory$createProcessor.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
+	at nextflow.script.BaseScript.process(BaseScript.groovy:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at Script_5c22cf09.runScript(Script_5c22cf09:10)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:151)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:189)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:287)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:132)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:246)
+	at nextflow.cli.Launcher.run(Launcher.groovy:451)
+	at nextflow.cli.Launcher.main(Launcher.groovy:633)
