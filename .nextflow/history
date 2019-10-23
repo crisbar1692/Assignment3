@@ -42,3 +42,4 @@
 2019-10-23 14:22:00	-	voluminous_laplace	-	28c5845c7f0b5a1c8f615fa73e4393d9	1cd59d45-8d8b-468b-b632-c635999f3d23	nextflow run simple2.nf
 2019-10-23 14:22:40	6.8s	insane_stonebraker	OK	6674d6ea6c28a9b537df8f6f1dabeabe	2e7e2954-8327-4ce3-95ef-4d16c6c9f9e3	nextflow run simple2.nf
 2019-10-23 14:23:15	6.2s	magical_northcutt	OK	6674d6ea6c28a9b537df8f6f1dabeabe	94cbed9a-0268-4d53-92f3-99890000b4c3	nextflow run simple2.nf
+2019-10-23 14:27:38	6.3s	suspicious_picasso	OK	6674d6ea6c28a9b537df8f6f1dabeabe	84d6d043-fb00-4b6b-ba10-8d2dff8464f0	nextflow run simple2.nf

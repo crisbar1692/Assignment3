@@ -1,40 +1,40 @@
-Oct-23 14:23:15.112 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
-Oct-23 14:23:15.364 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
-Oct-23 14:23:15.386 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [magical_northcutt] - revision: 6674d6ea6c
-Oct-23 14:23:15.573 [main] DEBUG nextflow.Session - Session uuid: 94cbed9a-0268-4d53-92f3-99890000b4c3
-Oct-23 14:23:15.574 [main] DEBUG nextflow.Session - Run name: magical_northcutt
-Oct-23 14:23:15.578 [main] DEBUG nextflow.Session - Executor pool size: 4
-Oct-23 14:23:15.660 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-23 14:27:37.996 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
+Oct-23 14:27:38.265 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-23 14:27:38.285 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [suspicious_picasso] - revision: 6674d6ea6c
+Oct-23 14:27:38.429 [main] DEBUG nextflow.Session - Session uuid: 84d6d043-fb00-4b6b-ba10-8d2dff8464f0
+Oct-23 14:27:38.429 [main] DEBUG nextflow.Session - Run name: suspicious_picasso
+Oct-23 14:27:38.433 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-23 14:27:38.521 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 19.07.0 build 5106
   Created: 27-07-2019 13:22 UTC (15:22 CEST)
   System: Linux 4.4.0-18362-Microsoft
   Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
   Encoding: UTF-8 (UTF-8)
-  Process: 1027@DESKTOP-I8SAP9J [127.0.1.1]
+  Process: 1146@DESKTOP-I8SAP9J [127.0.1.1]
   CPUs: 4 - Mem: 7.9 GB (3.5 GB) - Swap: 24 GB (23.9 GB)
-Oct-23 14:23:15.727 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
-Oct-23 14:23:15.727 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
-Oct-23 14:23:16.186 [main] DEBUG nextflow.Session - Session start invoked
-Oct-23 14:23:19.600 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-23 14:23:19.887 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Oct-23 14:23:19.888 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Oct-23 14:23:19.896 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Oct-23 14:23:19.903 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
-Oct-23 14:23:20.001 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
-Oct-23 14:23:20.030 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Oct-23 14:23:20.030 [main] DEBUG nextflow.Session - Session await
-Oct-23 14:23:20.257 [Task submitter] INFO  nextflow.Session - [10/0d339b] Submitted process > printSMILES (4)
-Oct-23 14:23:20.301 [Task submitter] INFO  nextflow.Session - [76/d7d2c7] Submitted process > printSMILES (2)
-Oct-23 14:23:20.308 [Task submitter] INFO  nextflow.Session - [15/fc1aca] Submitted process > printSMILES (1)
-Oct-23 14:23:20.313 [Task submitter] INFO  nextflow.Session - [45/2dac9c] Submitted process > printSMILES (3)
-Oct-23 14:23:20.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printSMILES (2); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/76/d7d2c7876a2e64a4d01125d355fda1]
-Oct-23 14:23:20.852 [Task submitter] INFO  nextflow.Session - [ab/8edb2d] Submitted process > printSMILES (5)
-Oct-23 14:23:20.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printSMILES (1); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/15/fc1acaf2e99f59f327ccca37cf418c]
-Oct-23 14:23:20.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printSMILES (3); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/45/2dac9c5c64f944b53c467c82393569]
-Oct-23 14:23:20.884 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: printSMILES (4); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/10/0d339ba7294ddacd2e9baae7ca25e1]
-Oct-23 14:23:20.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: printSMILES (5); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/ab/8edb2d252d4a2e232a5d1fc35130ef]
-Oct-23 14:23:20.906 [main] DEBUG nextflow.Session - Session await > all process finished
-Oct-23 14:23:20.993 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Oct-23 14:23:21.009 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=5; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=2s; failedDuration=0ms; cachedDuration=0ms]
-Oct-23 14:23:21.176 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Oct-23 14:23:21.214 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Oct-23 14:27:38.588 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
+Oct-23 14:27:38.589 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
+Oct-23 14:27:39.029 [main] DEBUG nextflow.Session - Session start invoked
+Oct-23 14:27:42.320 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-23 14:27:42.650 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-23 14:27:42.651 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-23 14:27:42.659 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-23 14:27:42.665 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-23 14:27:42.771 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
+Oct-23 14:27:42.811 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-23 14:27:42.811 [main] DEBUG nextflow.Session - Session await
+Oct-23 14:27:43.151 [Task submitter] INFO  nextflow.Session - [cf/23e14f] Submitted process > printSMILES (4)
+Oct-23 14:27:43.208 [Task submitter] INFO  nextflow.Session - [7a/15b728] Submitted process > printSMILES (3)
+Oct-23 14:27:43.218 [Task submitter] INFO  nextflow.Session - [e1/fcb0ff] Submitted process > printSMILES (1)
+Oct-23 14:27:43.226 [Task submitter] INFO  nextflow.Session - [bd/d9f5fb] Submitted process > printSMILES (2)
+Oct-23 14:27:43.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printSMILES (4); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/cf/23e14fc89e33c8f30945fafa51d025]
+Oct-23 14:27:43.825 [Task submitter] INFO  nextflow.Session - [49/16062f] Submitted process > printSMILES (5)
+Oct-23 14:27:43.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printSMILES (3); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/7a/15b72804c39214b9d817a6b05a6d6c]
+Oct-23 14:27:43.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printSMILES (1); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/e1/fcb0ff8e318b4c32db2c5374c4e38c]
+Oct-23 14:27:43.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: printSMILES (2); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/bd/d9f5fb035e43a1f2b25db0b760eec7]
+Oct-23 14:27:43.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: printSMILES (5); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/49/16062f6aa4fe4242aa85ece769ecbf]
+Oct-23 14:27:43.936 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-23 14:27:44.024 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-23 14:27:44.044 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=5; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=2.3s; failedDuration=0ms; cachedDuration=0ms]
+Oct-23 14:27:44.239 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-23 14:27:44.285 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
