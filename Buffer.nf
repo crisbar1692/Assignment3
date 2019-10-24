@@ -13,10 +13,11 @@ Channel
 	.fromPath("./Small.tsv")
 	.splitCsv(header: ['wikidata','smiles'],sep:'\t')
 	.map{row->tuple(row.wikidata,row.smiles)}
+	.buffer( size: 50000, remainder: true)
 	.set{molecules_ch}
 
 process printSMILES {
-cpus 1
+
 
     input:
     set wikidata, smiles from molecules_ch
