@@ -16,7 +16,7 @@ Channel
 	.set{molecules_ch}
 
 process printSMILES {
-cpus3
+cpus 3
 
     input:
     set wikidata, smiles from molecules_ch
