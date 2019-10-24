@@ -10,7 +10,7 @@ import groovy.time.TimeDuration
 def start = new Date()
 TimeDuration tmax=TimeCategory.minus(start,start)
 Channel
-	.fromPath("./short.tsv")
+	.fromPath("./Small.tsv")
 	.splitCsv(header: ['wikidata','smiles'],sep:'\t')
 	.map{row->tuple(row.wikidata,row.smiles)}
 	.set{molecules_ch}
