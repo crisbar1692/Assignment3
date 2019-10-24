@@ -26,6 +26,9 @@ exec:
 	for (entry in set){
 	def cdk = new CDKManager(".");
 	try {
+	wikidata=entry[0]
+	smiles=entry[1]
+	isosmiles=entry[2]
 	mol = cdk.fromSMILES(smiles)
 	descriptor=new JPlogPDescriptor()
 	logP=descriptor.calculate(mol.getAtomContainer()).value.toString()
