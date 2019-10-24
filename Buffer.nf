@@ -13,16 +13,17 @@ Channel
 	.fromPath("./Small.tsv")
 	.splitCsv(header: ['wikidata','smiles'],sep:'\t')
 	.map{row->tuple(row.wikidata,row.smiles)}
-	.buffer( size: 50000, remainder: true)
+	.buffer( size: 2, remainder: true)
 	.set{molecules_ch}
 
 process printSMILES {
 
 
     input:
-    set wikidata, smiles from molecules_ch
+    each set wikidata, smiles from molecules_ch
 exec:
 	
+	for (entry in set){
 	def cdk = new CDKManager(".");
 	try {
 	mol = cdk.fromSMILES(smiles)
@@ -36,4 +37,5 @@ exec:
     println "Error in " 
      } 
     
+}
 }
