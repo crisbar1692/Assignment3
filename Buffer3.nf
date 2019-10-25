@@ -20,7 +20,7 @@ process printSMILES {
 
 
     input:
-    each set wikidata, smiles from molecules_ch
+    each set from molecules_ch
 exec:
 	
 	for (entry in set){
