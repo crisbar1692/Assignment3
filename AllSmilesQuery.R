@@ -7,6 +7,12 @@ query <- 'SELECT DISTINCT ?compound ?smiles ?isoSmiles WHERE {
 }'
 
 r <- query_wikidata(query)
+n=10000
+r2<-r[1:n,]
 
 write.table(r, file = "AllSmilesWikidata.tsv", sep = "\t", row.names = FALSE,
+            quote = F)
+
+
+write.table(r2, file = "Small.tsv", sep = "\t", row.names = FALSE,
             quote = F)
