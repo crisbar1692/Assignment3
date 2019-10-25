@@ -1,40 +1,283 @@
-Oct-23 14:27:37.996 [main] DEBUG nextflow.cli.Launcher - $> nextflow run simple2.nf
-Oct-23 14:27:38.265 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
-Oct-23 14:27:38.285 [main] INFO  nextflow.cli.CmdRun - Launching `simple2.nf` [suspicious_picasso] - revision: 6674d6ea6c
-Oct-23 14:27:38.429 [main] DEBUG nextflow.Session - Session uuid: 84d6d043-fb00-4b6b-ba10-8d2dff8464f0
-Oct-23 14:27:38.429 [main] DEBUG nextflow.Session - Run name: suspicious_picasso
-Oct-23 14:27:38.433 [main] DEBUG nextflow.Session - Executor pool size: 4
-Oct-23 14:27:38.521 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-25 14:18:16.254 [main] DEBUG nextflow.cli.Launcher - $> nextflow Buffer.nf
+Oct-25 14:18:16.453 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.07.0
+Oct-25 14:18:16.469 [main] INFO  nextflow.cli.CmdRun - Launching `Buffer.nf` [stupefied_keller] - revision: 409ebc1d4e
+Oct-25 14:18:16.590 [main] DEBUG nextflow.Session - Session uuid: af206e0c-1023-4baf-871a-e38a4425d516
+Oct-25 14:18:16.591 [main] DEBUG nextflow.Session - Run name: stupefied_keller
+Oct-25 14:18:16.593 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-25 14:18:16.647 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 19.07.0 build 5106
   Created: 27-07-2019 13:22 UTC (15:22 CEST)
   System: Linux 4.4.0-18362-Microsoft
   Runtime: Groovy 2.5.6 on OpenJDK 64-Bit Server VM 11.0.4+11-post-Ubuntu-1ubuntu218.04.3
   Encoding: UTF-8 (UTF-8)
-  Process: 1146@DESKTOP-I8SAP9J [127.0.1.1]
-  CPUs: 4 - Mem: 7.9 GB (3.5 GB) - Swap: 24 GB (23.9 GB)
-Oct-23 14:27:38.588 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/Assignment3/work [wslfs]
-Oct-23 14:27:38.589 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/Assignment3/bin
-Oct-23 14:27:39.029 [main] DEBUG nextflow.Session - Session start invoked
-Oct-23 14:27:42.320 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-23 14:27:42.650 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Oct-23 14:27:42.651 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Oct-23 14:27:42.659 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Oct-23 14:27:42.665 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
-Oct-23 14:27:42.771 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printSMILES -- maxForks: 4
-Oct-23 14:27:42.811 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Oct-23 14:27:42.811 [main] DEBUG nextflow.Session - Session await
-Oct-23 14:27:43.151 [Task submitter] INFO  nextflow.Session - [cf/23e14f] Submitted process > printSMILES (4)
-Oct-23 14:27:43.208 [Task submitter] INFO  nextflow.Session - [7a/15b728] Submitted process > printSMILES (3)
-Oct-23 14:27:43.218 [Task submitter] INFO  nextflow.Session - [e1/fcb0ff] Submitted process > printSMILES (1)
-Oct-23 14:27:43.226 [Task submitter] INFO  nextflow.Session - [bd/d9f5fb] Submitted process > printSMILES (2)
-Oct-23 14:27:43.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printSMILES (4); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/cf/23e14fc89e33c8f30945fafa51d025]
-Oct-23 14:27:43.825 [Task submitter] INFO  nextflow.Session - [49/16062f] Submitted process > printSMILES (5)
-Oct-23 14:27:43.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printSMILES (3); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/7a/15b72804c39214b9d817a6b05a6d6c]
-Oct-23 14:27:43.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printSMILES (1); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/e1/fcb0ff8e318b4c32db2c5374c4e38c]
-Oct-23 14:27:43.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: printSMILES (2); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/bd/d9f5fb035e43a1f2b25db0b760eec7]
-Oct-23 14:27:43.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: printSMILES (5); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/Assignment3/work/49/16062f6aa4fe4242aa85ece769ecbf]
-Oct-23 14:27:43.936 [main] DEBUG nextflow.Session - Session await > all process finished
-Oct-23 14:27:44.024 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Oct-23 14:27:44.044 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=5; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=2.3s; failedDuration=0ms; cachedDuration=0ms]
-Oct-23 14:27:44.239 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Oct-23 14:27:44.285 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 3213@DESKTOP-I8SAP9J [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (3.2 GB) - Swap: 24 GB (24 GB)
+Oct-25 14:18:16.695 [main] DEBUG nextflow.Session - Work-dir: /home/crisbar16/scientificProgramming/Assignment3/work [wslfs]
+Oct-25 14:18:16.695 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/crisbar16/scientificProgramming/Assignment3/bin
+Oct-25 14:18:16.988 [main] DEBUG nextflow.Session - Session start invoked
+Oct-25 14:18:19.413 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-25 14:18:19.775 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-25 14:18:19.776 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-25 14:18:19.786 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-25 14:18:19.793 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-25 14:18:19.969 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [0]
+Oct-25 14:18:19.997 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > printLogP -- maxForks: 4
+Oct-25 14:18:20.033 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-25 14:18:20.034 [main] DEBUG nextflow.Session - Session await
+Oct-25 14:18:20.390 [Task submitter] INFO  nextflow.Session - [a2/807666] Submitted process > printLogP (1)
+Oct-25 14:18:20.447 [Task submitter] INFO  nextflow.Session - [ca/e04ad8] Submitted process > printLogP (3)
+Oct-25 14:18:20.456 [Task submitter] INFO  nextflow.Session - [2e/a415f0] Submitted process > printLogP (2)
+Oct-25 14:18:20.471 [Task submitter] INFO  nextflow.Session - [1b/c17103] Submitted process > printLogP (4)
+Oct-25 14:18:21.445 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: printLogP (3); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ca/e04ad886143ae29cce33c52eff1423]
+Oct-25 14:18:21.446 [Task submitter] INFO  nextflow.Session - [e2/c45e1d] Submitted process > printLogP (5)
+Oct-25 14:18:21.491 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: printLogP (1); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/a2/807666f30f7cca552bcbdf92767df1]
+Oct-25 14:18:21.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: printLogP (5); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e2/c45e1d5c6da16282720a2e6d7947eb]
+Oct-25 14:18:21.496 [Task submitter] INFO  nextflow.Session - [2e/8bc6d0] Submitted process > printLogP (6)
+Oct-25 14:18:21.499 [Task submitter] INFO  nextflow.Session - [4c/3df134] Submitted process > printLogP (7)
+Oct-25 14:18:21.506 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: printLogP (2); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/2e/a415f0b33c966bef37bf3fc422cbfc]
+Oct-25 14:18:21.507 [Task submitter] INFO  nextflow.Session - [3d/1fcba8] Submitted process > printLogP (111)
+Oct-25 14:18:21.514 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: printLogP (4); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/1b/c17103e36fa94fbe851155aa3a786d]
+Oct-25 14:18:21.522 [Task submitter] INFO  nextflow.Session - [ae/3ec040] Submitted process > printLogP (8)
+Oct-25 14:18:21.550 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: printLogP (6); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/2e/8bc6d06663350991315c10d6f91596]
+Oct-25 14:18:21.557 [Task submitter] INFO  nextflow.Session - [e1/e6ab07] Submitted process > printLogP (11)
+Oct-25 14:18:21.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: printLogP (7); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/4c/3df134a262cafdef16e3b6e2748b67]
+Oct-25 14:18:21.581 [Task submitter] INFO  nextflow.Session - [ed/e04203] Submitted process > printLogP (12)
+Oct-25 14:18:21.691 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 111; name: printLogP (111); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/3d/1fcba86a43f47406c0ccbd629be5f1]
+Oct-25 14:18:21.692 [Task submitter] INFO  nextflow.Session - [16/9a2784] Submitted process > printLogP (543)
+Oct-25 14:18:21.694 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: printLogP (8); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ae/3ec0401293d19b5fd2fc96b3627afb]
+Oct-25 14:18:21.694 [Task submitter] INFO  nextflow.Session - [f6/0ceb48] Submitted process > printLogP (814)
+Oct-25 14:18:21.696 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: printLogP (11); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e1/e6ab07d65bdb8f97bb698630e91496]
+Oct-25 14:18:21.697 [Task submitter] INFO  nextflow.Session - [4e/1fd386] Submitted process > printLogP (840)
+Oct-25 14:18:21.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: printLogP (12); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ed/e042039410de915a3e86ce4dceff45]
+Oct-25 14:18:21.787 [Task submitter] INFO  nextflow.Session - [96/356c75] Submitted process > printLogP (10)
+Oct-25 14:18:21.818 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 543; name: printLogP (543); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/16/9a27849d2c89f8029507894c1dad24]
+Oct-25 14:18:21.822 [Task submitter] INFO  nextflow.Session - [11/cf53ab] Submitted process > printLogP (537)
+Oct-25 14:18:21.830 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 840; name: printLogP (840); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/4e/1fd386ffa00ad64f9e45ab1b8d5a77]
+Oct-25 14:18:21.840 [Task submitter] INFO  nextflow.Session - [de/7abe5e] Submitted process > printLogP (9)
+Oct-25 14:18:21.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 814; name: printLogP (814); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f6/0ceb4898c367408a0be49380518c83]
+Oct-25 14:18:21.861 [Task submitter] INFO  nextflow.Session - [68/f4d3d0] Submitted process > printLogP (419)
+Oct-25 14:18:21.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 537; name: printLogP (537); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/11/cf53ab4e331058fff72bac0ba42e7e]
+Oct-25 14:18:21.878 [Task submitter] INFO  nextflow.Session - [63/4f7262] Submitted process > printLogP (13)
+Oct-25 14:18:21.903 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: printLogP (10); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/96/356c75ab55c1a0b5d6fbcf3ef3506a]
+Oct-25 14:18:21.905 [Task submitter] INFO  nextflow.Session - [e3/7385a8] Submitted process > printLogP (14)
+Oct-25 14:18:21.959 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: printLogP (9); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/de/7abe5ea3ec6291431b84058313d92c]
+Oct-25 14:18:21.962 [Task submitter] INFO  nextflow.Session - [8d/2a523b] Submitted process > printLogP (644)
+Oct-25 14:18:21.963 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 419; name: printLogP (419); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/68/f4d3d0159f948d70d8c3a04ecce739]
+Oct-25 14:18:21.964 [Task submitter] INFO  nextflow.Session - [6c/c1e2b2] Submitted process > printLogP (645)
+Oct-25 14:18:21.986 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: printLogP (13); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/63/4f72620307db7195c53091d8516c33]
+Oct-25 14:18:21.989 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: printLogP (14); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e3/7385a8112ab4039b20539dd95e028b]
+Oct-25 14:18:21.989 [Task submitter] INFO  nextflow.Session - [37/ec2794] Submitted process > printLogP (15)
+Oct-25 14:18:21.996 [Task submitter] INFO  nextflow.Session - [37/8c4e7d] Submitted process > printLogP (19)
+Oct-25 14:18:22.009 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 645; name: printLogP (645); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/6c/c1e2b220cf17807e17ce2138ce9a60]
+Oct-25 14:18:22.013 [Task submitter] INFO  nextflow.Session - [20/056aec] Submitted process > printLogP (18)
+Oct-25 14:18:22.022 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 644; name: printLogP (644); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/8d/2a523bceb91933cf333540d82bdc50]
+Oct-25 14:18:22.025 [Task submitter] INFO  nextflow.Session - [b9/c3ac8f] Submitted process > printLogP (899)
+Oct-25 14:18:22.060 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: printLogP (15); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/37/ec27949faee63bdeca2f9712e25cb8]
+Oct-25 14:18:22.061 [Task submitter] INFO  nextflow.Session - [a6/e692f4] Submitted process > printLogP (17)
+Oct-25 14:18:22.067 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: printLogP (19); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/37/8c4e7d5777cc467352769f5bae9202]
+Oct-25 14:18:22.073 [Task submitter] INFO  nextflow.Session - [9a/c882c1] Submitted process > printLogP (792)
+Oct-25 14:18:22.081 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: printLogP (18); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/20/056aec8261522fee17036250a42a4d]
+Oct-25 14:18:22.086 [Task submitter] INFO  nextflow.Session - [76/f3acf4] Submitted process > printLogP (16)
+Oct-25 14:18:22.090 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 899; name: printLogP (899); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b9/c3ac8fe86975a54b33941fd01f02f7]
+Oct-25 14:18:22.090 [Task submitter] INFO  nextflow.Session - [f6/4dd721] Submitted process > printLogP (995)
+Oct-25 14:18:22.113 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: printLogP (16); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/76/f3acf4994c86fe6a85d01fa8ae6ef4]
+Oct-25 14:18:22.116 [Task submitter] INFO  nextflow.Session - [5e/c7c80d] Submitted process > printLogP (20)
+Oct-25 14:18:22.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: printLogP (17); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/a6/e692f4268690084f73cd69cf2f67f6]
+Oct-25 14:18:22.127 [Task submitter] INFO  nextflow.Session - [b1/dde5f7] Submitted process > printLogP (22)
+Oct-25 14:18:22.142 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 792; name: printLogP (792); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/9a/c882c10fb6a9c964f08d44fb557729]
+Oct-25 14:18:22.144 [Task submitter] INFO  nextflow.Session - [2d/9afd92] Submitted process > printLogP (24)
+Oct-25 14:18:22.144 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 995; name: printLogP (995); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f6/4dd7219bb537e4138e682c027e7264]
+Oct-25 14:18:22.150 [Task submitter] INFO  nextflow.Session - [ea/af4984] Submitted process > printLogP (616)
+Oct-25 14:18:22.153 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: printLogP (20); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/5e/c7c80d8501ca8fd1ec2142b2f2aced]
+Oct-25 14:18:22.153 [Task submitter] INFO  nextflow.Session - [ed/85ebc1] Submitted process > printLogP (655)
+Oct-25 14:18:22.199 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 655; name: printLogP (655); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ed/85ebc15f80b24d29eb17a851cf743f]
+Oct-25 14:18:22.204 [Task submitter] INFO  nextflow.Session - [24/c200fc] Submitted process > printLogP (23)
+Oct-25 14:18:22.211 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: printLogP (22); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b1/dde5f7b6e5be3424baae4ea7d0f990]
+Oct-25 14:18:22.213 [Task submitter] INFO  nextflow.Session - [ab/336ca2] Submitted process > printLogP (610)
+Oct-25 14:18:22.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: printLogP (24); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/2d/9afd9208861d02e01fa497342fc590]
+Oct-25 14:18:22.214 [Task submitter] INFO  nextflow.Session - [01/a60443] Submitted process > printLogP (611)
+Oct-25 14:18:22.241 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 616; name: printLogP (616); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ea/af4984c200de4acd88864c1ece40f9]
+Oct-25 14:18:22.242 [Task submitter] INFO  nextflow.Session - [38/68a4ce] Submitted process > printLogP (21)
+Oct-25 14:18:22.243 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: printLogP (23); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/24/c200fcfd2cd5f93a21482f5cc853cd]
+Oct-25 14:18:22.245 [Task submitter] INFO  nextflow.Session - [64/5631eb] Submitted process > printLogP (356)
+Oct-25 14:18:22.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 610; name: printLogP (610); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ab/336ca24cc045b769f49fd987ca2e0e]
+Oct-25 14:18:22.247 [Task submitter] INFO  nextflow.Session - [35/6bb9b8] Submitted process > printLogP (858)
+Oct-25 14:18:22.259 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 611; name: printLogP (611); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/01/a6044351d41d2cc2e4b7b82ccb7c59]
+Oct-25 14:18:22.261 [Task submitter] INFO  nextflow.Session - [e8/a8c600] Submitted process > printLogP (25)
+Oct-25 14:18:22.283 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 356; name: printLogP (356); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/64/5631ebe71bd3315a34b27a98a61223]
+Oct-25 14:18:22.284 [Task submitter] INFO  nextflow.Session - [c3/85919b] Submitted process > printLogP (26)
+Oct-25 14:18:22.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 858; name: printLogP (858); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/35/6bb9b8e6226d45d979172b5d9b8730]
+Oct-25 14:18:22.294 [Task submitter] INFO  nextflow.Session - [cc/0b7b1c] Submitted process > printLogP (705)
+Oct-25 14:18:22.306 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: printLogP (21); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/38/68a4cec87bddb6d2800fcf149d0f03]
+Oct-25 14:18:22.309 [Task submitter] INFO  nextflow.Session - [8c/0de3ec] Submitted process > printLogP (28)
+Oct-25 14:18:22.326 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 705; name: printLogP (705); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/cc/0b7b1c18025bf08e5726eae517e328]
+Oct-25 14:18:22.328 [Task submitter] INFO  nextflow.Session - [7a/271cff] Submitted process > printLogP (27)
+Oct-25 14:18:22.347 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: printLogP (25); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e8/a8c600d4fd2ea96b496229b4bf10fc]
+Oct-25 14:18:22.348 [Task submitter] INFO  nextflow.Session - [b4/6cfbca] Submitted process > printLogP (30)
+Oct-25 14:18:22.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: printLogP (26); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/c3/85919b807af101f2da34824e0d1690]
+Oct-25 14:18:22.355 [Task submitter] INFO  nextflow.Session - [77/2f0541] Submitted process > printLogP (32)
+Oct-25 14:18:22.366 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: printLogP (27); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/7a/271cff6fb4391db8eec5f0f87aa2cb]
+Oct-25 14:18:22.372 [Task submitter] INFO  nextflow.Session - [95/76a6f9] Submitted process > printLogP (31)
+Oct-25 14:18:22.387 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: printLogP (28); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/8c/0de3ecfc45f471d89f8701a86be87b]
+Oct-25 14:18:22.390 [Task submitter] INFO  nextflow.Session - [0e/f725f4] Submitted process > printLogP (29)
+Oct-25 14:18:22.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: printLogP (32); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/77/2f05417148b32dd21e5d6e343e711c]
+Oct-25 14:18:22.421 [Task submitter] INFO  nextflow.Session - [21/9347f6] Submitted process > printLogP (282)
+Oct-25 14:18:22.424 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: printLogP (31); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/95/76a6f9970c260841ef52e13cbc26fc]
+Oct-25 14:18:22.426 [Task submitter] INFO  nextflow.Session - [72/363d76] Submitted process > printLogP (520)
+Oct-25 14:18:22.437 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: printLogP (30); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b4/6cfbcaa7c7efced86fb200678213bb]
+Oct-25 14:18:22.439 [Task submitter] INFO  nextflow.Session - [f4/f7739b] Submitted process > printLogP (34)
+Oct-25 14:18:22.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: printLogP (29); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/0e/f725f48e54d22120c5fb1821f66303]
+Oct-25 14:18:22.450 [Task submitter] INFO  nextflow.Session - [b0/3855ea] Submitted process > printLogP (33)
+Oct-25 14:18:22.463 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 282; name: printLogP (282); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/21/9347f60e04e7b71604ab4d7c2e3c3f]
+Oct-25 14:18:22.466 [Task submitter] INFO  nextflow.Session - [3c/c8918f] Submitted process > printLogP (36)
+Oct-25 14:18:22.487 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 520; name: printLogP (520); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/72/363d7664e77dba8f7389398b0bbfef]
+Oct-25 14:18:22.489 [Task submitter] INFO  nextflow.Session - [76/7d97cb] Submitted process > printLogP (37)
+Oct-25 14:18:22.496 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: printLogP (36); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/3c/c8918f678873f14b84157f801a5347]
+Oct-25 14:18:22.507 [Task submitter] INFO  nextflow.Session - [7f/51f455] Submitted process > printLogP (35)
+Oct-25 14:18:22.512 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: printLogP (34); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f4/f7739b54d97096d37d428c1a969edb]
+Oct-25 14:18:22.513 [Task submitter] INFO  nextflow.Session - [76/ee6983] Submitted process > printLogP (967)
+Oct-25 14:18:22.545 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: printLogP (35); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/7f/51f45558362adc06a31a4f5554e5c8]
+Oct-25 14:18:22.546 [Task submitter] INFO  nextflow.Session - [ba/edeb00] Submitted process > printLogP (39)
+Oct-25 14:18:22.553 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: printLogP (37); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/76/7d97cb6fbaa4616b0c27ef31e20a4f]
+Oct-25 14:18:22.554 [Task submitter] INFO  nextflow.Session - [f2/96fdce] Submitted process > printLogP (627)
+Oct-25 14:18:22.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 967; name: printLogP (967); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/76/ee69835689cb4fe894dd609353ca31]
+Oct-25 14:18:22.562 [Task submitter] INFO  nextflow.Session - [36/6fc014] Submitted process > printLogP (361)
+Oct-25 14:18:22.570 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: printLogP (33); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b0/3855eae923e6b0aad466355d07460d]
+Oct-25 14:18:22.573 [Task submitter] INFO  nextflow.Session - [16/df8af6] Submitted process > printLogP (40)
+Oct-25 14:18:22.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: printLogP (39); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ba/edeb0066439edf8c991b00c950439b]
+Oct-25 14:18:22.664 [Task submitter] INFO  nextflow.Session - [76/02821d] Submitted process > printLogP (41)
+Oct-25 14:18:22.690 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 361; name: printLogP (361); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/36/6fc014e99ea4e1a241cb85b81d7733]
+Oct-25 14:18:22.695 [Task submitter] INFO  nextflow.Session - [99/a9a21b] Submitted process > printLogP (38)
+Oct-25 14:18:22.704 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: printLogP (40); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/16/df8af6001a5babd0636d46e0dcb2b2]
+Oct-25 14:18:22.708 [Task submitter] INFO  nextflow.Session - [84/bb0701] Submitted process > printLogP (286)
+Oct-25 14:18:22.714 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 627; name: printLogP (627); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f2/96fdcea909001c2a2477f7d6eefbc7]
+Oct-25 14:18:22.716 [Task submitter] INFO  nextflow.Session - [9f/55c2f2] Submitted process > printLogP (42)
+Oct-25 14:18:22.748 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: printLogP (38); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/99/a9a21b769581f18282f335c449fd42]
+Oct-25 14:18:22.750 [Task submitter] INFO  nextflow.Session - [23/76e8c8] Submitted process > printLogP (43)
+Oct-25 14:18:22.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 286; name: printLogP (286); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/84/bb07018e328562de1fe1d37254133e]
+Oct-25 14:18:22.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: printLogP (42); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/9f/55c2f2a8bcdd74903b1c7afd789690]
+Oct-25 14:18:22.771 [Task submitter] INFO  nextflow.Session - [5f/60748a] Submitted process > printLogP (44)
+Oct-25 14:18:22.773 [Task submitter] INFO  nextflow.Session - [e7/3448ab] Submitted process > printLogP (45)
+Oct-25 14:18:22.786 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: printLogP (41); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/76/02821d0801c3ef26199de84ffc37f7]
+Oct-25 14:18:22.788 [Task submitter] INFO  nextflow.Session - [fa/a68c62] Submitted process > printLogP (47)
+Oct-25 14:18:22.794 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: printLogP (43); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/23/76e8c8904e9e4f88cadccd7d37065f]
+Oct-25 14:18:22.797 [Task submitter] INFO  nextflow.Session - [6e/d1bd2d] Submitted process > printLogP (687)
+Oct-25 14:18:22.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: printLogP (47); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/fa/a68c62062530f769979263fd7d35a9]
+Oct-25 14:18:22.810 [Task submitter] INFO  nextflow.Session - [15/ecfcad] Submitted process > printLogP (46)
+Oct-25 14:18:22.831 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: printLogP (45); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e7/3448ab2dbe9bbf2b3e5d4cd0147d55]
+Oct-25 14:18:22.832 [Task submitter] INFO  nextflow.Session - [0b/893350] Submitted process > printLogP (48)
+Oct-25 14:18:22.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: printLogP (44); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/5f/60748aaab6c5d16eb4d20e345ac6dc]
+Oct-25 14:18:22.844 [Task submitter] INFO  nextflow.Session - [73/698ef1] Submitted process > printLogP (1430)
+Oct-25 14:18:22.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 687; name: printLogP (687); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/6e/d1bd2d7142af90e5fe7311acfcec88]
+Oct-25 14:18:22.873 [Task submitter] INFO  nextflow.Session - [df/6ceec7] Submitted process > printLogP (50)
+Oct-25 14:18:22.917 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: printLogP (46); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/15/ecfcad9a75b7404d59fe3c857e55ba]
+Oct-25 14:18:22.919 [Task submitter] INFO  nextflow.Session - [fd/f1f3a6] Submitted process > printLogP (661)
+Oct-25 14:18:22.920 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: printLogP (48); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/0b/89335065881dbcfc28c354abd8249b]
+Oct-25 14:18:22.920 [Task submitter] INFO  nextflow.Session - [7f/f3078c] Submitted process > printLogP (856)
+Oct-25 14:18:22.922 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1430; name: printLogP (1430); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/73/698ef1af42e714da61968690c81d7b]
+Oct-25 14:18:22.922 [Task submitter] INFO  nextflow.Session - [09/60c514] Submitted process > printLogP (1437)
+Oct-25 14:18:22.939 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: printLogP (50); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/df/6ceec7568980775ac26624947a4ac3]
+Oct-25 14:18:22.941 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 661; name: printLogP (661); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/fd/f1f3a6d9d4401c9b6057bccab7379b]
+Oct-25 14:18:22.942 [Task submitter] INFO  nextflow.Session - [cb/3bf993] Submitted process > printLogP (49)
+Oct-25 14:18:22.943 [Task submitter] INFO  nextflow.Session - [4e/549d86] Submitted process > printLogP (52)
+Oct-25 14:18:22.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1437; name: printLogP (1437); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/09/60c5142af98adc2061a66028f1c720]
+Oct-25 14:18:22.979 [Task submitter] INFO  nextflow.Session - [e7/513d20] Submitted process > printLogP (51)
+Oct-25 14:18:22.982 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: printLogP (49); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/cb/3bf9939d55e7483029f2492c7deb48]
+Oct-25 14:18:22.982 [Task submitter] INFO  nextflow.Session - [7d/3f0911] Submitted process > printLogP (1012)
+Oct-25 14:18:23.005 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: printLogP (51); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/e7/513d2062e0adab48cc73d3c6ee9dc7]
+Oct-25 14:18:23.007 [Task submitter] INFO  nextflow.Session - [df/413916] Submitted process > printLogP (54)
+Oct-25 14:18:23.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 856; name: printLogP (856); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/7f/f3078c0a1998225aaee95ed9bfcd28]
+Oct-25 14:18:23.021 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: printLogP (52); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/4e/549d86b23845fc31f3cfd1fa96e6e5]
+Oct-25 14:18:23.021 [Task submitter] INFO  nextflow.Session - [83/727e54] Submitted process > printLogP (53)
+Oct-25 14:18:23.025 [Task submitter] INFO  nextflow.Session - [5f/80f755] Submitted process > printLogP (55)
+Oct-25 14:18:23.041 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: printLogP (55); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/5f/80f7554a93863e148e270bd2b82ae4]
+Oct-25 14:18:23.043 [Task submitter] INFO  nextflow.Session - [0f/b69931] Submitted process > printLogP (56)
+Oct-25 14:18:23.056 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: printLogP (54); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/df/413916e4f85e09b10d8c98883d4c63]
+Oct-25 14:18:23.059 [Task submitter] INFO  nextflow.Session - [bd/ce0d9f] Submitted process > printLogP (58)
+Oct-25 14:18:23.073 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: printLogP (56); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/0f/b699317db87acab2666a58f84f2e1c]
+Oct-25 14:18:23.076 [Task submitter] INFO  nextflow.Session - [ad/1d7be8] Submitted process > printLogP (57)
+Oct-25 14:18:23.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: printLogP (53); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/83/727e5454c95808b9b5c3dd71b281a5]
+Oct-25 14:18:23.083 [Task submitter] INFO  nextflow.Session - [11/c27516] Submitted process > printLogP (1510)
+Oct-25 14:18:23.094 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: printLogP (57); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ad/1d7be8eef51353bb5cee9a51be1c1f]
+Oct-25 14:18:23.097 [Task submitter] INFO  nextflow.Session - [95/207ebb] Submitted process > printLogP (62)
+Oct-25 14:18:23.102 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1012; name: printLogP (1012); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/7d/3f09116e94b0b636a6241a38757942]
+Oct-25 14:18:23.105 [Task submitter] INFO  nextflow.Session - [9d/5caf3a] Submitted process > printLogP (458)
+Oct-25 14:18:23.116 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1510; name: printLogP (1510); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/11/c27516dd0eba0773e432ee6586e5f6]
+Oct-25 14:18:23.118 [Task submitter] INFO  nextflow.Session - [ab/85001a] Submitted process > printLogP (60)
+Oct-25 14:18:23.142 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 458; name: printLogP (458); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/9d/5caf3a59cb9b52524cb7a9c6db3442]
+Oct-25 14:18:23.146 [Task submitter] INFO  nextflow.Session - [06/973e75] Submitted process > printLogP (61)
+Oct-25 14:18:23.158 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: printLogP (60); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/ab/85001abe0298a46e6ecf8df8c27e2b]
+Oct-25 14:18:23.158 [Task submitter] INFO  nextflow.Session - [f0/f5ecf5] Submitted process > printLogP (59)
+Oct-25 14:18:23.166 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: printLogP (58); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/bd/ce0d9f3a78975cf65f230edc12ccd9]
+Oct-25 14:18:23.167 [Task submitter] INFO  nextflow.Session - [0f/5ff177] Submitted process > printLogP (64)
+Oct-25 14:18:23.182 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: printLogP (62); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/95/207ebb03ad64d19c81bf962681ca89]
+Oct-25 14:18:23.184 [Task submitter] INFO  nextflow.Session - [65/8f7b96] Submitted process > printLogP (63)
+Oct-25 14:18:23.190 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: printLogP (59); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f0/f5ecf5996d4a7cc9f0e4a6c1bf270a]
+Oct-25 14:18:23.190 [Task submitter] INFO  nextflow.Session - [93/5a3867] Submitted process > printLogP (1857)
+Oct-25 14:18:23.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: printLogP (64); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/0f/5ff17715ddc3aebef5d0f75db79164]
+Oct-25 14:18:23.196 [Task submitter] INFO  nextflow.Session - [45/0ad4d9] Submitted process > printLogP (66)
+Oct-25 14:18:23.205 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: printLogP (61); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/06/973e75817fe751d9cbb4c4237e2eb1]
+Oct-25 14:18:23.207 [Task submitter] INFO  nextflow.Session - [57/3b522e] Submitted process > printLogP (1671)
+Oct-25 14:18:23.215 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: printLogP (63); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/65/8f7b968483ce928e90ba45e0011f0d]
+Oct-25 14:18:23.218 [Task submitter] INFO  nextflow.Session - [b6/626a99] Submitted process > printLogP (65)
+Oct-25 14:18:23.231 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: printLogP (66); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/45/0ad4d9796fbace2f5dbdd59c699a45]
+Oct-25 14:18:23.233 [Task submitter] INFO  nextflow.Session - [2d/6b91c2] Submitted process > printLogP (67)
+Oct-25 14:18:23.247 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1671; name: printLogP (1671); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/57/3b522e6b66682af8d3a9e4107d79eb]
+Oct-25 14:18:23.250 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: printLogP (65); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b6/626a9919c3b1a03bfecbe29df76e27]
+Oct-25 14:18:23.254 [Task submitter] INFO  nextflow.Session - [1a/014b5d] Submitted process > printLogP (68)
+Oct-25 14:18:23.255 [Task submitter] INFO  nextflow.Session - [9e/f56189] Submitted process > printLogP (70)
+Oct-25 14:18:23.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1857; name: printLogP (1857); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/93/5a38679fc075baa042b64dd91fe954]
+Oct-25 14:18:23.270 [Task submitter] INFO  nextflow.Session - [b8/300777] Submitted process > printLogP (69)
+Oct-25 14:18:23.277 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: printLogP (68); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/1a/014b5d2f9d4bd3d591050fcf0d3030]
+Oct-25 14:18:23.278 [Task submitter] INFO  nextflow.Session - [31/f3a81f] Submitted process > printLogP (243)
+Oct-25 14:18:23.306 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: printLogP (69); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/b8/300777341e8d9c56ce064ca55a7cde]
+Oct-25 14:18:23.309 [Task submitter] INFO  nextflow.Session - [6a/dab4e1] Submitted process > printLogP (71)
+Oct-25 14:18:23.320 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 243; name: printLogP (243); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/31/f3a81fdeecc986bb16a8f393ce73f4]
+Oct-25 14:18:23.321 [Task submitter] INFO  nextflow.Session - [2a/bba13c] Submitted process > printLogP (72)
+Oct-25 14:18:23.325 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: printLogP (67); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/2d/6b91c223a4bfe5e7eaca48b9d32303]
+Oct-25 14:18:23.327 [Task submitter] INFO  nextflow.Session - [06/32fc48] Submitted process > printLogP (2016)
+Oct-25 14:18:23.338 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: printLogP (70); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/9e/f56189cda064a3a934669cdc7c6a31]
+Oct-25 14:18:23.340 [Task submitter] INFO  nextflow.Session - [7a/921bb9] Submitted process > printLogP (75)
+Oct-25 14:18:23.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2016; name: printLogP (2016); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/06/32fc48f6810d55ca1e9474d10eab6f]
+Oct-25 14:18:23.372 [Task submitter] INFO  nextflow.Session - [8d/544f11] Submitted process > printLogP (74)
+Oct-25 14:18:23.377 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: printLogP (71); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/6a/dab4e15b658a63ccc0b0a8b92ddf37]
+Oct-25 14:18:23.379 [Task submitter] INFO  nextflow.Session - [4d/d9a689] Submitted process > printLogP (1850)
+Oct-25 14:18:23.391 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: printLogP (74); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/8d/544f1104055e1ba6f77189ef085a2c]
+Oct-25 14:18:23.393 [Task submitter] INFO  nextflow.Session - [57/096539] Submitted process > printLogP (76)
+Oct-25 14:18:23.403 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: printLogP (75); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/7a/921bb9e1bb33de51c0f90a6b01fb05]
+Oct-25 14:18:23.404 [Task submitter] INFO  nextflow.Session - [f7/9d095a] Submitted process > printLogP (73)
+Oct-25 14:18:23.414 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: printLogP (72); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/2a/bba13c77b4e70b1a5f417f1f4a5360]
+Oct-25 14:18:23.414 [Task submitter] INFO  nextflow.Session - [bf/57f1ce] Submitted process > printLogP (2091)
+Oct-25 14:18:23.426 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: printLogP (73); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/f7/9d095aaf463c135b8457de7430c626]
+Oct-25 14:18:23.428 [Task submitter] INFO  nextflow.Session - [77/17ea6c] Submitted process > printLogP (80)
+Oct-25 14:18:23.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1850; name: printLogP (1850); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/4d/d9a68908832176f3f685e82b222b6a]
+Oct-25 14:18:23.439 [Task submitter] INFO  nextflow.Session - [8f/1c559a] Submitted process > printLogP (917)
+Oct-25 14:18:23.449 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: printLogP (80); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/77/17ea6c702064f85e593b24bf3c1081]
+Oct-25 14:18:23.450 [Task submitter] INFO  nextflow.Session - [75/5eb939] Submitted process > printLogP (78)
+Oct-25 14:18:23.460 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: printLogP (76); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/57/0965396cbe843cd2334e59ee6df304]
+Oct-25 14:18:23.464 [Task submitter] INFO  nextflow.Session - [1f/db0123] Submitted process > printLogP (79)
+Oct-25 14:18:23.489 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 79; name: printLogP (79); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/1f/db0123b2597dcdfad507ce4efc335c]
+Oct-25 14:18:23.491 [Task submitter] INFO  nextflow.Session - [51/a21ac7] Submitted process > printLogP (82)
+Oct-25 14:18:23.508 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2091; name: printLogP (2091); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/bf/57f1ce3e572ea28afd91cd8e1bc990]
+Oct-25 14:18:23.509 [Task submitter] INFO  nextflow.Session - [4e/d9dc5b] Submitted process > printLogP (83)
+Oct-25 14:18:23.510 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 917; name: printLogP (917); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/8f/1c559afe7728dfedb91a83653b1366]
+Oct-25 14:18:23.520 [Task submitter] INFO  nextflow.Session - [d6/f7f7ab] Submitted process > printLogP (2197)
+Oct-25 14:18:23.522 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: printLogP (82); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/51/a21ac79e497de28338725c045f7742]
+Oct-25 14:18:23.522 [Task submitter] INFO  nextflow.Session - [27/fbfad9] Submitted process > printLogP (401)
+Oct-25 14:18:23.531 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 78; name: printLogP (78); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/75/5eb939ee2273bf10d460ddc832f914]
+Oct-25 14:18:23.541 [Task submitter] INFO  nextflow.Session - [72/252d73] Submitted process > printLogP (77)
+Oct-25 14:18:23.553 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 401; name: printLogP (401); status: COMPLETED; exit: -; error: -; workDir: /home/crisbar16/scientificProgramming/Assignment3/work/27/fbfad9f1f8ce41b33281940d758b51]
+Oct-25 14:18:23.554 [Task submitter] INFO  nextflow.Session - [6b/e58a59] Submitted process > printLogP (1049)
+Oct-25 14:18:23.579 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Oct-25 14:18:23.632 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] printLogP
+  status=ACTIVE
+  port 0: (value) bound ; channel: __$eachinparam<0>
+  port 1: (cntrl) -     ; channel: $
+
+Oct-25 14:18:23.637 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-25 14:18:23.638 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-25 14:18:23.647 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (4)
+Oct-25 14:18:23.668 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=120; failedCount=4; ignoredCount=0; cachedCount=0; succeedDuration=8.7s; failedDuration=0ms; cachedDuration=0ms]
+Oct-25 14:18:23.795 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-25 14:18:23.837 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
