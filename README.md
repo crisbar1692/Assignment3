@@ -25,11 +25,11 @@ This is the line of code required to install nextflow in the command window.
 ```{groovy}
 curl -s https://get.nextflow.io | bash
 ```
-##**Query**
+## **Query**
 
 The query to obtain all the molecules from wikidata was done in R in the file called SmilesQueryWikidata.R. The results obtained were stored in two files: AllSmilesWikidata.tsv which contains all the 158785 results and Small.tsv which contain only 10000 results in order to try the code with less molecules expending less time.
 
-##**Nextflow files**
+## **Nextflow files**
 
 There are four Nextflow files in the repository called Buffer1.nf, Buffer2.nf, Buffer3.nf, Buffer4.nf. These file analyse all the molecules taking the file AllSmilesWikidata.tsv. However, if the user wants to analyse another file such as Small.tsv with only 10,000 molecules. Line 12 must be replaced with the name of the file as follows
 ```{groovy}
@@ -51,7 +51,7 @@ All have exactly the same code differing only from the size of the buffer that i
 ```
 The biggest the number the less buffered the system will be and concequently the calculation will be faster.
 
-##**Results**
+## **Results**
 After running the 4 files in the command windows using this code:
 ```{groovy}
 	time ./ nextflow Buffer1.nf
@@ -68,8 +68,14 @@ The running time was observed and compared for each one of the files. The record
 | Buffer3 | 9'30''  | 17'21'' | 2'19'' |
 | Buffer4 | 8'37''  | 15'57'' | 1'54'' |
 
-##**Conclusions**
+## **Conclusions**
 As expected the speed of processing the code was higher when the buffer was smaller. On the other hand when the buffer was increased the speed decreased accordingly. This approach is useful to see somehow the importance of paralel computing in big tasks analasying a relative big amount of data. However, this technic does not relate exactly with the use of one or more cores. Hence, even if the results would be qualitative similar, the times of simulation would be different.
 
 ## **License** 
 The license used is [MIT](https://choosealicense.com/licenses/mit/) it has permissions for commercial use, distribution, modification, and private use. There are limitations regarding the liability and warranty. 
+
+## **References**
+
+Di Tommaso, P., Chatzou, M., Floden, E. W., Barja, P. P., Palumbo, E., & Notredame, C. (2017). Nextflow enables reproducible computational workflows. Nature biotechnology, 35(4), 316.
+
+Steinbeck, C., Hoppe, C., Kuhn, S., Floris, M., Guha, R., & Willighagen, E. L. (2006). Recent developments of the chemistry development kit (CDK)-an open-source java library for chemo-and bioinformatics. Current pharmaceutical design, 12(17), 2111-2120.
