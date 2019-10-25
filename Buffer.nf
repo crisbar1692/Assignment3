@@ -22,22 +22,30 @@ Channel
 //Start process to calculate LogP
 process printLogP {
 
-
+//Take the input from molecules_ch to set to iterate in the for loop
     input:
     each set from molecules_ch
+
 exec:
-	
+//Start for loop over each molecule in set	
 	for (entry in set){
+//Define method to parse  the smiles
 	def cdk = new CDKManager(".");
 	try {
+//Assign corresponding entry of the smiles to variable smiles
 	smiles=entry[1]
+//Parse the smiles
 	molecule = cdk.fromSMILES(smiles)
+//Define method to calculate LogP
 	descriptor=new JPlogPDescriptor()
+//Calculate Atom container as required input for logP calculation
 	Atom_Container=molecule.getAtomContainer()
+//Calculate Log P
 	logP=descriptor.calculate(Atom_Container).value.toString()
+//print logP
 	  println "Log P:" + logP +" for "+molecule
 		
-
+//Print error in in case of error in the process
 	}catch (Exception exc) {
     println "Error in " 
      } 
